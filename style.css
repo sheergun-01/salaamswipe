@@ -99,7 +99,164 @@ a{
     border: 0;
 }
 
+/* List */
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+  
+  /* Grids */
+  .grid {
+    display: grid;
+}
 
+/* Blocks */
+.block {
+    --padding-vertical: 6rem;
+    padding: var(--padding-vertical) 2rem;
+}
+  
+.block__header {
+    text-align: center;
+    margin-bottom: 4rem;
+    transform: scale(0.9);
+}
+  
+  .block__heading {
+    margin-top: 0;
+}
+
+.block--skewed-right {
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+  
+.block--skewed-left {
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.app-descr {
+    margin-bottom: 20rem;
+    font-size: 3rem;
+}
+  
+.grid-container {
+    /* display: flex; */
+    margin-left: 15rem;
+    border: 2px solid #fff;
+    background-color: black;
+    color: #fff;
+    border-radius: 3rem;
+    width: fit-content;
+    /* align-self: auto; */
+}
+
+.app-location {
+    margin: auto;
+    margin-right: 2rem;
+    font-size: bolder;
+}
+
+.container {
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100vw;
+    background: url("./images/abdul-gani-m-DJ_kZaITX78-unsplash.jpg") no-repeat
+      center center fixed;
+    background-color: transparent;
+}
+
+.container-second {
+    margin: auto;
+    border-bottom: 2px ridge #ccc;
+    position: static;
+}
+
+.container-third {
+    margin: auto;
+    border-bottom: 2px ridge #ccc;
+}
+
+.container-fourth {
+    margin: auto;
+    border-bottom: 2px ridge #ccc;
+}
+.container-fifth {
+    border-bottom: 2px ridge #ccc;
+    padding: auto;
+    margin-left: 2rem;
+}
+  
+.container-second .block__header > h2 {
+    color: orange;
+}
+.container-third .block__header > h2 {
+    color: orange;
+}
+.container-fourth .block__header > h2 {
+    color: orange;
+}
+.container-fifth .block__header > h2 {
+    color: orange;
+}
+
+
+/* HERO */
+.hero {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem;
+}
+
+.hero__image {
+    width: 100%;
+}
+
+
+.hero__content {
+    text-align: left;
+    align-self: center;
+}
+  
+.banner {
+    height: auto;
+    width: 5rem;
+}
+
+.wordy {
+    margin-left: 5rem;
+    margin-right: 0;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    line-height: 1.5;
+    word-spacing: 5px;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.feedback--gridx1 > h2 {
+    color: orange;
+    text-decoration: underline;
+}
+
+.feedback--gridx2 > h2 {
+    color: orange;
+}
+
+.feedback--gridx3 > h2 {
+    color: orange;
+}
+  
+.history {
+    font-weight: bold;
+}
 
 
 
